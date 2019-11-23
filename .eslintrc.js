@@ -1,0 +1,22 @@
+module.exports = {
+    env: {
+      browser: true,
+      es6: true,
+      node: true
+    },
+    extends: "airbnb-base",
+    globals: {
+      Atomics: "readonly",
+      SharedArrayBuffer: "readonly"
+    },
+    parserOptions: {
+      ecmaVersion: 2018
+    },
+    rules: {
+      "no-console": "off",
+      "no-alert": "off",
+      "no-restricted-syntax": ["error", "ForInStatement", "LabeledStatement", "WithStatement"],
+      "no-underscore-dangle": ["error", { "allowAfterThis": true }]
+    }
+  };
+  
